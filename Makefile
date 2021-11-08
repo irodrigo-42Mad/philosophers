@@ -19,8 +19,8 @@ NAME = philo
 NAMEBONUS = philo_bonus
 
 # SOURCES #
-SRC 		= 	ft_main ft_check_error ft_checking ft_strlen ft_time ft_utils ft_exec ft_clean ft_philo_init ft_exec_aux
-SRCBONUS 	=	
+SRC 		= 	ft_main ft_check_error ft_checking ft_strlen ft_time ft_utils ft_utils_lib ft_exec ft_clean ft_philo_init ft_exec_aux
+SRCBONUS 	=
 HLIBS		=	ft_philo.h headers/ft_errors.h
 
 SRCFIN = $(addsuffix .c, $(SRC))
@@ -29,7 +29,7 @@ OBJS = $(SRCFIN:.c=.o)
 OBJSBONUS = $(SRCFINBONUS:.c=.o)
 
 # COMPILER #
-CC = gcc -Wall -Wextra -Werror -pthread #-fsanitize=address -g3 
+CC = gcc -Wall -Wextra -Werror -pthread #-fsanitize=address -g3
 #-fsanitize=address
 
 # COLOUR DEFINITION #

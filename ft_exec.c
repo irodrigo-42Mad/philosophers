@@ -68,6 +68,8 @@ void	*ft_ch_phil(void *data)
 {
 	t_philo	*my_philo;
 
+//revision necesaria.....
+
 	my_philo = ((t_philo *)data);
 	while (TRUE)
 	{

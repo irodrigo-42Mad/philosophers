@@ -132,6 +132,9 @@ int			ft_atoi(const char *str);
 long int	ft_nb_size(long int n);
 size_t		ft_strlen(const char *str);
 void		ft_rounds(int round);
+void		ft_bzero(void *s, size_t n);
+void		*ft_calloc(size_t count, size_t size);
+
 
 /*
 **	error control functions

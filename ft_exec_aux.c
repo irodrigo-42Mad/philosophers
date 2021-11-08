@@ -35,6 +35,7 @@ void	ft_check_meals(t_philo *my_philo)
 	pthread_mutex_lock((my_philo->my_env)->mt_state);
 	if (my_philo->meal_num == my_philo->my_env->lim_meat)
 	{
+		//revisar la funcion
 		my_philo->my_env->nphil_dead++;
 		my_philo->meal_num++;
 	}

@@ -12,14 +12,13 @@
 
 #include "ft_philo.h"
 
+// procedimiento completamente correcto
 int	ft_check(int argc, char **argv, t_envr *myinfo)
 {
 	if (myinfo == NULL)
 		return (ft_put_error("Error", "Imposible inicializar", -1));
 	if ((argc < 5 || argc > 6))
 		return (ft_put_error("Error", "Numero de parámetros incorrecto", -2));
-	
-//comprobar que los philos son positivos.
 	myinfo->n_philos = ft_atoi(argv[1]);
 	myinfo->t_die = ft_atoi(argv[2]);
 	myinfo->t_eat = ft_atoi(argv[3]);
@@ -29,7 +28,6 @@ int	ft_check(int argc, char **argv, t_envr *myinfo)
 		return (ft_put_error("Error", "Formato argumentos incorrecto", -3));
 	if (argc == 6)
 	{
-	// comprobar que el numero de comidas es positivo.
 		myinfo->lim_meat = ft_atoi (argv[5]);
 		if (!myinfo->lim_meat)
 			return (ft_put_error("Error", "Número de comidas incorrecto", -4));

@@ -14,7 +14,7 @@
 
 void	ft_exec_philo(t_philo *my_philo, int nphil, t_envr *my_envr)
 {
-	my_philo[nphil].pos = nphil;
+	my_philo[nphil].pos = nphil + 1;
 	my_philo[nphil].meal_num = 0;
 	my_philo[nphil].start = my_gettime();
 	my_philo[nphil].my_env = my_envr;

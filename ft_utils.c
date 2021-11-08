@@ -68,7 +68,7 @@ void	ft_write_phil_st(int work, t_philo *my_philo)
 	else
 	{
 		printf ("[%lu] ", (my_gettime() - (my_philo->my_env)->init_time));
-		printf ("%s%d", GEN01, my_philo->pos + 1);
+		printf ("%s%d", GEN01, my_philo->pos);
 		if (work == TAKE_FORK)
 			printf ("%s", FORK01);
 		if (work == EAT)
@@ -79,7 +79,7 @@ void	ft_write_phil_st(int work, t_philo *my_philo)
 			printf ("%s", THINK01);
 		if (work == DEAD)
 			printf ("%s", DIED01);
-	}				
+	}
 }
 
 void	ft_rounds(int num)
